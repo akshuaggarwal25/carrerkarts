@@ -3,10 +3,10 @@
     margin: 0px;
     font-family: roboto;
 }
+/*Header start*/
 header{
     width: 100%;
-    height: 400px;
-    background-size: 100%;
+    height: auto;
     background-repeat: no-repeat;
     background-image: url('../images/banner.jpg');
     padding-top:40px ; 
@@ -33,16 +33,16 @@ header{
 .mainul li a{
     text-decoration: none;
 }
+/*Header end*/
 
 
 
 
 
 
-
-
+/*search section start*/
 .search-section{
-    width: 94%;
+    
     height: auto;
     text-align: center;
     background-color: #061033;
@@ -67,11 +67,14 @@ header{
     padding: 25px;
     font-weight: bold;
 }
+/*search section end*/
 
 
-
+/*Explore everything section start*/
 .explore-section{
-    margin-top:40px;
+    margin:40px 0px;
+    text-align: center;
+    float: left;
 }
 .heading{
     text-align: center;
@@ -89,35 +92,172 @@ header{
     font-weight: bold;
 }
 .explore-boxes{
-    background-color: cadetblue;
     margin-top:45px;
     margin: auto;
     text-align: center;
-    width: 65%;
-    height: 250px;
+    width: 69%;
+    height: auto;
 }
-.boxes li{
-    width:34% ;
-    margin:auto;
-    height: 200px;
-    
+.explore-boxes li{
+    float: left;
+    text-decoration: none;
+    display: block;
+    border: 1px solid #f3f3f3;
+    padding: 36px 0px;
+    width: 33%;
+    text-align: center;
+    height: auto;
+}
+.explore-boxes h4{
+    margin:17px;
+}
+.explore-boxes p{
+    font-size: 11px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.explore-boxes i{
+    padding-top:12px;
+}
+.explore-boxes li:hover{
+    color: white;
+    background: #0569b6 ; 
+    background: linear-gradient(to bottom, #0569b6  0%,#04497e  100%); 
+    cursor: pointer;
+}
+.fa-arrow-right{
+    color: #04497e;
+    width: 40px;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 50%;
+    height: 28px;
+}
+/*Explore everything section start*/
+
+
+/*Featured course start*/
+.featured-section{
+    margin-top: 50px;
+    height: auto;
+    width:100%;
+    text-align: center;
+    float: left;
+}
+.featured{
+    margin: auto;
+    float: left;
+    height: auto;
+}
+.featured-area{
+    margin: auto;
+    width: 69%;
+    height: auto;
+}
+.featured-heading{
+    text-align: left;
+}
+.featured-heading h1{
+    font-size: 30px;
+}
+.featured p{
+    color: gray;
+    margin-bottom: 7px;
+}
+hr{
+    border:1px solid #ececec;
+    width:6%;
+    margin-top:5px;
+}
+.second-hr{
+    color: red;
+    width:3%;
+    margin:3px 0px;
+}
+.featured button{
+    background-color: white;
+    margin-top:-30px;
+    padding: 5px 2px;
+    border: 1px solid #cecbcb;
     float: right;
 }
-.box1{
-    width:33% ;
-    height: 200px;
-    background-color: coral;
-    margin:auto
+.featured-boxes div{
+    background-image: url(../images/featured-image.png);
+    width: 25%;
+    padding: 30px;
+    background-size: 100% 74%;
+    background-repeat: no-repeat;
+    text-align: center;
+    float: left;
+    border: 1px solid blueviolet;
 }
-.box2{
-    width:34% ;
-    margin:auto;
-    height: 200px;
-    background-color:red;
+.featured-boxes h1{
+    margin-bottom:20px;   
 }
-.box3{
-    width:33% ;
-    margin:auto;
-    height: 200px;
-    background-color:green;
+.featured-boxes h4{
+    float:right ;
+    margin-top: 20px;
+    margin-bottom: -15px;
 }
+.featured-boxes p{
+    margin-bottom: 20px;
+    color: white;
+}
+.featured-second-boxes{
+    background-color:yellow !important;
+    margin: auto;
+    margin-left:23px;
+}
+.featured-boxes div:hover{
+    color: white;
+    background: #0569b6 ; 
+    background: linear-gradient(to bottom, #0569b6  0%,#04497e  100%); 
+    cursor: pointer;
+}
+.load-button{
+    border:none;
+    margin-top: 40px;
+    padding: 15px 20px;
+    color: white;
+    background-color:#2a80b9;
+}
+/*Featured course end*/
+
+/*Image strip start*/
+.strip-image{
+    margin:20px 0px;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    background-image: url(../images/stripimage.jpg);
+    height: auto;  
+    float: left;
+    padding: 60px 0px;
+}
+.strip-area{
+    margin: auto;
+    width: 69%;
+    height: auto;
+}
+.strip-boxes div{
+    width:20%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    color: white;
+    float: left;
+    padding: 10px 20px;
+}
+.strip-boxes hr{
+    text-align: center;
+    margin: auto;
+    margin-top:20px;
+    margin-bottom: 20px;
+    border:1px solid #2a80b9;
+    width:15%;
+}
+.strip-boxes p{
+    margin-top: 7px;
+    font-size: 13px;
+}
+/*Image strip end*/
