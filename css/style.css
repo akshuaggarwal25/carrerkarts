@@ -6,32 +6,44 @@
 /*Header start*/
 header{
     width: 100%;
-    height: auto;
+    height: 400px;
     background-repeat: no-repeat;
-    background-image: url('../images/banner.jpg');
+    background-image: url('../images/banner1.jpg');
     padding-top:40px ; 
+    background-size: cover;
+}
+.mainul{
+    float: left;
+    margin-bottom: -1px;
 }
 .nav-strip{
     background-color:white;
-    width: 80%;    
+    width: 100%;    
     height: auto;
+    float: left;
+    border-bottom: 2px solid #2a80b9;
     margin: auto;
-    border-bottom: 3px solid #2a80b9;
 }
 .nav-strip img{
     width:20%;
-    margin-bottom: -4px;
+    float: left;
 }
 .nav-strip button{
     background-color: green;
     color: white;
 }
 .mainul li{
+    float: left;
    text-decoration: none;
+   padding: 19px 25px;
    display: block;
 }
 .mainul li a{
     text-decoration: none;
+    margin-left: 9px;
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
 }
 /*Header end*/
 
@@ -66,6 +78,9 @@ header{
     border-radius: 30px;
     padding: 25px;
     font-weight: bold;
+}
+.search-section i{
+    margin-left: -44px;
 }
 /*search section end*/
 
@@ -118,12 +133,16 @@ header{
 }
 .explore-boxes i{
     padding-top:12px;
+    color:#2a80b9;
 }
 .explore-boxes li:hover{
     color: white;
-    background: #0569b6 ; 
     background: linear-gradient(to bottom, #0569b6  0%,#04497e  100%); 
     cursor: pointer;
+}
+.explore-boxes li:hover .fa-2x{
+    padding-top:12px;
+    color:white;
 }
 .fa-arrow-right{
     color: #04497e;
@@ -138,7 +157,7 @@ header{
 
 /*Featured course start*/
 .featured-section{
-    margin-top: 50px;
+    margin-top: 30px;
     height: auto;
     width:100%;
     text-align: center;
@@ -147,11 +166,6 @@ header{
 .featured{
     margin: auto;
     float: left;
-    height: auto;
-}
-.featured-area{
-    margin: auto;
-    width: 69%;
     height: auto;
 }
 .featured-heading{
@@ -174,52 +188,115 @@ hr{
     width:3%;
     margin:3px 0px;
 }
-.featured button{
+.featured-area button{
     background-color: white;
     margin-top:-30px;
     padding: 5px 2px;
     border: 1px solid #cecbcb;
     float: right;
 }
-.featured-boxes div{
-    background-image: url(../images/featured-image.png);
-    width: 25%;
-    padding: 30px;
-    background-size: 100% 74%;
-    background-repeat: no-repeat;
-    text-align: center;
-    float: left;
-    border: 1px solid blueviolet;
+
+.image{
+    width: 278px;
+    height: 160px;
+    background-color: yellow;
 }
-.featured-boxes h1{
-    margin-bottom:20px;   
-}
-.featured-boxes h4{
-    float:right ;
-    margin-top: 20px;
-    margin-bottom: -15px;
-}
-.featured-boxes p{
-    margin-bottom: 20px;
-    color: white;
-}
-.featured-second-boxes{
-    background-color:yellow !important;
-    margin: auto;
-    margin-left:23px;
-}
-.featured-boxes div:hover{
-    color: white;
-    background: #0569b6 ; 
+.content-div{
     background: linear-gradient(to bottom, #0569b6  0%,#04497e  100%); 
     cursor: pointer;
+    width: 278px;
+    height: 160px;
+    position: absolute;
+    margin-top: -164px;
+    color: white;
+    text-align: center;
+    display: none;   
+}
+.content-div1{
+    background: linear-gradient(to bottom, #0569b6  0%,#04497e  100%); 
+    cursor: pointer;
+    width: 278px;
+    height: 160px;
+    position: absolute;
+    margin-top: -164px;
+    color: white;
+    text-align: center;
+    display: none;   
+}
+.content-div2{
+    background: linear-gradient(to bottom, #0569b6  0%,#04497e  100%); 
+    cursor: pointer;
+    width: 278px;
+    height: 160px;
+    position: absolute;
+    margin-top: -164px;
+    color: white;
+    text-align: center;
+    display: none;   
+}
+.content-div h1{
+    margin-top: 40px;
+}
+.content-div1 h1{
+    margin-top: 40px;
+}
+.content-div2 h1{
+    margin-top: 40px;
+}
+.content-div p{
+    margin: 10px 20px;
+    font-size: 12px;
+}
+.content-div1 p{
+    margin: 10px 20px;
+    font-size: 12px;
+}
+.content-div2 p{
+    margin: 10px 20px;
+    font-size: 12px;
+}
+.icon{
+    border: 2px solid white;
+    padding: 7px;
+    font-size: 20px;
+    background-color: #061033;
+    border-radius: 50%;
+    color: white;
+    width: 22px;
+    margin-left: 20px;
+    margin-top: -24px;
+    position: absolute;
+    padding-left: 8px;
+}
+.image:hover + .content-div{
+    
+    display: block;
+}
+
+.image:hover + .content-div1{
+    
+    display: block;
+}
+.image:hover + .content-div2{
+    
+    display: block;
+}
+.featured-area{
+    width: 69%;
+    height: auto;
+    margin: auto;
+}
+.featured-area .featured-box{
+    float: left;
+    margin: 20px 15px;
 }
 .load-button{
-    border:none;
-    margin-top: 40px;
-    padding: 15px 20px;
+    float: none !important;
+    border:none !important;
+    margin: 40px !important;
+    padding: 15px 20px !important;
     color: white;
-    background-color:#2a80b9;
+    background-color:#2a80b9 !important;
 }
 /*Featured course end*/
 
@@ -256,8 +333,360 @@ hr{
     border:1px solid #2a80b9;
     width:15%;
 }
+.strip-boxes h1{
+    font-size: 30px;
+}
 .strip-boxes p{
     margin-top: 7px;
     font-size: 13px;
 }
 /*Image strip end*/
+
+/*Why careerkarts start*/
+.carrerkart{
+    text-align: center;
+   
+    height: auto;
+    margin:40px 0px;
+    width:100%;
+    float: left;
+}
+.carrerakart-heading p{
+    text-transform: uppercase;
+    color: gray;
+    font-size: 13px;
+}
+.carrerakart-heading h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.carrerkart-area{
+    width: 69%;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+.carrerkart-leftside{
+    float: left;
+    
+}
+.carrerkart-leftside img{
+    width: 75%;
+    height:450px;
+}
+.carrerkart-rightside{
+    float: right;
+    height: auto;
+    width: 50%;
+    padding: 20px 0px;
+    text-align: left;
+    margin: 40px 0px;
+}
+.carrerkart-rightside i{
+    float: left;
+    color: #2a80b9;
+    margin-right: 10px;
+}
+.carrerkart-rightside p{
+    color: gray;
+    font-size: 13px;
+    margin-left: 40px;
+}
+
+
+/*Why careerkarts end*/
+
+/*What students start*/
+.what-student{
+    background-color: #efefef;
+    height: auto;
+    padding: 20px 0px;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+.student-area{
+    margin: auto;
+    
+    width: 69%;
+    text-align: center;
+    margin-top: 30px;
+    height: auto;
+}
+.student-area h1{
+    font-size: 30px;
+}
+.student-area p{
+    font-size: 13px;
+    margin-top: 7px;
+}
+.small-circle span{
+    height: 35px;
+    width: 35px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 25px;
+    
+}
+.white-box1{
+    width: 69%;
+    background-color: white;
+    margin: auto;
+    height: auto;
+    transform: rotate(-3deg);
+    box-shadow: 0px 0px 3px 3px #dddddd;
+    overflow: hidden;
+}
+.white-box{
+    width: 105%;
+    background-color: white;
+    margin: 0 auto;
+    margin-left: -16px !important;
+    height: auto;
+    transform: rotate(3deg);
+    box-shadow: 0px 0px 3px 3px #dddddd;
+}
+.white-box span{
+    height: 100px;
+    width: 100px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:20px;
+}
+.white-box h6{
+    margin: 10px 0px;
+    color: #cecbcb;
+}
+.white-box p{
+    color: gray;
+    padding: 10px 50px;
+}
+/*What students end*/
+
+
+/*News Start*/
+.recent-news{
+    
+    width: 100%;
+    height: auto;
+    margin: 40px 0px;
+    float: left;
+}
+.news-area{
+    
+    width: 69%;
+    margin: auto;
+    
+}
+.news-left-side{
+    float: left;
+}
+.news-right-side{
+    float: right;
+}
+.news-right-side button{
+    padding: 7px 20px;
+    font-size: 12px;
+    border: 2px solid #bbb;
+    background-color: white;
+}
+.news-hr{
+    border:1px solid #ececec;
+    width:26%;
+    margin-top:5px;
+}
+.news-second-hr{
+    width:16%;
+    margin:3px 0px;
+}
+.news-boxes img{
+    width: 100%;
+}
+.news-boxes div{
+    float: left;
+    width: 30%;
+    
+}
+.news-boxes h3{
+    margin-top: 10px;
+}
+.news-boxes p{
+    margin:15px 0px;
+    font-size: 12px;
+    color: #bbb;
+}
+.news-boxes button{
+    font-size: 11px;
+    border: 1px solid #bbb;
+    background-color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+/*News end*/
+
+/*Query start*/
+.query{
+    height: auto;
+    margin-top: 20px;
+    float: left;
+    text-align: center;
+    color: white;
+    width: 100%;
+    background-color: #2A80B9;
+    padding: 20px 0px;
+}
+.query h1{
+    font-size: 30px;
+}
+.query input{
+    padding: 10px;
+    width:30%;
+    height: auto;
+    border:2px solid white;
+    color: white;
+    margin: 10px;
+    background-color:transparent;
+}
+.query textarea{
+    padding: 10px;
+    width:30%;
+    height: auto;
+    border:2px solid white;
+    color: white;
+    margin: 10px;
+    background-color:transparent;
+}
+.query button{
+    font-size: 11px;
+    background-color: transparent;
+    border:2px solid white;
+    padding: 8px 23px;
+}
+.query button a{
+    color: white;
+    text-decoration: none;
+}
+/*Query end*/
+
+
+/*Deatils start*/
+.details{
+    
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 30px 0px;
+}
+.details-area{
+    width: 69%;
+    
+    height: auto;
+    margin: auto;
+    
+}
+.details-area div{
+    height: auto;
+    width: 29%;
+    
+    float: left;
+    padding: 30px 0px;
+    text-align: left;
+}
+.details-area i{
+    color: #2a80b9;
+    
+}
+.details-area span{
+    
+    font-size:17px;
+    font-weight: bold;
+}
+
+/*Deatils end*/
+
+
+/*Footer Start*/
+.footer{
+    background-color: #282828;
+    width: 100%;
+    padding: 30px 0px;
+    height: auto;
+    float: left;
+    text-align: center;
+}
+.footer-area{
+    width: 69%;
+    margin: auto;
+}
+.footer-area div{
+    width: 19.7%;
+    float: left;
+    height: auto;
+    padding: 20px 0px;
+}
+.footer-area div img{
+    width:100%;
+}
+.footer-area div p{
+    margin: 10px 0px;
+    color: #6d6d6d;
+    text-align: left;
+    font-size: 10px;
+}
+.footer-area div i{
+    color: #969595;
+    float: left;
+    margin-right:10px;
+    margin-top: 10px;
+    border:1px solid #737272;
+    border-radius: 50%;
+    background-color: transparent;
+    padding:3px;
+}
+.footer-area div h4{
+    font-size: 12px;
+    color: white;
+    margin: 15px 0px;
+    text-align: left;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+.footer-area div ul{
+    margin-left: 30px;
+    text-align: left;
+}
+.footer-area div li{
+
+    text-decoration: none;
+    list-style-type: none;
+}
+.footer-area div li a{
+    margin-top: 20px;
+    color:#6d6d6d;
+    text-decoration: none;
+    font-size: 11px;
+}
+.footer-area div input{
+    padding: 12px 20px;
+    background-color: #353535;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    
+}
+.footer-envelope{
+    float:right !important;
+    margin-top: -34px !important;
+    margin-right: -2px !important;
+    background-color: #2a80b9 !important;
+    color: white !important;
+    border:none !important;
+    position: relative;
+    padding: 6px !important;
+}
+.footer span{
+    float: left ;
+}
+/*Footer end*/
+
