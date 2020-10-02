@@ -4,9 +4,77 @@
     font-family: roboto;
 }
 /*Header start*/
+.outer-div{
+    height: 60px;
+    border-bottom: 2px solid #2A80B9;
+    margin: auto;
+    width: 80%;
+    margin-top: 20px;
+    padding: 0;
+    background-color: white;
+      overflow: hidden;
+  }
+  .div-2, .div-3 {
+    display: inline-block;
+  }
+  .div-2{
+    width: 80%;
+    margin: auto;
+    height: 50px;
+  }
+  .div-3{
+    width: 10%;
+    height: 60px;
+    float: right;
+    position: relative;
+    padding-top: 19px;
+  }
+  .div-3:after{
+  content: '';
+      width: 200%;
+      height: inherit;
+      position: absolute;
+      top: 0;
+      left: -10%;
+      
+      transform: skewX(-15deg);
+      background-color: #2A80B9;
+  }
+  .div-3 a{
+    color: white;
+    z-index: 10;
+    text-decoration: none;
+    margin-top: 3px;
+    margin-left: 5px;
+    position: absolute;
+      
+  }
+  .forul{
+      position: absolute;
+  }
+  .forul img{
+      height: auto;
+      width: 85%;
+      margin-top: -19px;
+      margin-left: -15px;
+  }
+  .forul li{
+      float: left;
+      padding: 19px 15px;
+      text-decoration: none;
+      
+      display: block;
+  }
+  .forul li a{
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+  }
+
+
 header{
     width: 100%;
-    height: 400px;
+    height: 460px;
     background-repeat: no-repeat;
     background-image: url('../images/banner1.jpg');
     padding-top:40px ; 
@@ -44,6 +112,14 @@ header{
     font-size: 14px;
     color: black;
     font-weight: 500;
+}
+.insideul{
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+    
+    background-color:white;
 }
 /*Header end*/
 
@@ -396,6 +472,112 @@ hr{
 
 /*Why careerkarts end*/
 
+/* top listing start*/
+
+.slantdiv {
+    display: inline-block;
+  }
+  
+  .slantdiv{
+    width: 50%;
+    height: 500px;
+    position: relative;
+  }
+  .slantdiv:after{
+  content: '';
+      width: 200%;
+      height: inherit;
+      position: absolute;
+      top: 0;
+      left: -20%;
+      overflow-x: hidden;
+      transform: skewX(-15deg);
+      background-color: #2a80b9;
+  }
+  .testyr{
+      background-color:#2a80b9;
+      width: 40%;
+      height: 500px;
+      float: right;
+      margin-right: -100%;
+  }
+  .exam-course{
+      width: 100%;
+      height: 550px;
+      float: left;
+      
+  }
+  .course{
+      width:50%;
+      border:2px solid white;
+      height: 550px;
+      float: left;
+  }
+  .exam{
+      width:50%;
+      
+      height: 550px;
+      float: right;
+      margin-top: -553px;
+  }
+  .exam-content{
+      z-index: 1;
+      position: absolute;
+      padding:20px 20px ;
+      text-align: center;
+      color: white;
+      width: 150%;
+      margin: auto;
+  }
+  .exam-content span{
+      margin: auto;
+      text-align: center;
+      font-size: 12px;
+      margin-left: 140px;
+      width: 100%;
+  }
+  .exam-content h1{
+      width: 100%;
+      font-weight: bold;
+      margin: 7px 0px;
+      text-align: center;
+      margin-left: 60px;
+  }
+  .examhr{
+      width:13%;
+      margin-left: 280px;
+  }
+  .exam-content p{
+      width: 101%;
+      text-decoration-line: underline;
+      padding: 40px 20px;
+     
+      margin: 20px;
+      font-size: 17px;
+      text-transform: uppercase;
+  }
+  .course-heading{
+      
+      text-align: center;
+      margin-left:-80px;
+  }
+  .course-heading h6{
+      color: gray;
+      font-size: 12px;
+      margin-bottom: 5px;
+  }
+  .course-heading p{
+      margin-left: 100px;
+      text-decoration-line: underline;
+      padding: 40px 20px;
+      color: #2A80B9;
+      margin: 36px;
+      font-size: 17px;
+      text-transform: uppercase;
+  }
+
+
+/* top listing end*/
 /*What students start*/
 .what-student{
     background-color: #efefef;
@@ -404,6 +586,7 @@ hr{
     text-align: center;
     float: left;
     width: 100%;
+    margin-top: -49px;
 }
 .student-area{
     margin: auto;
