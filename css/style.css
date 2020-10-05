@@ -115,12 +115,61 @@ header{
 }
 .insideul{
     width: 80%;
-    height: 200px;
+   
+    height: 180px;
     margin: auto;
     overflow: hidden;
-    
     background-color:white;
 }
+
+.div-11, .div-12{
+    display: inline-block;
+  }
+  .div-11{
+    width: 25%;
+    height: 180px;
+    color: white;
+      position: relative;
+  }
+  .div-11:after{
+  content: '';
+      width: 200%;
+      height: inherit;
+      position: absolute;
+      top: 0;
+      right: -10%;
+      transform: skewX(-15deg);
+      background-size: cover;
+      background-image: url('../images/banner2.jpg');
+  }
+  .div-11-content{
+      z-index: 1;
+      position: absolute;
+      margin-top: 50px;
+      margin-left: 20px;
+  }
+  .div-12{
+    width: 80%;
+    float: right;
+    margin: 40px -130px;
+    height: 50px;
+  }
+  .div-12 ul{
+      
+      float: left;
+      margin-top: -20px;
+  }
+  .div-12 ul li{
+      margin-bottom: 10px;
+      display: block;
+      text-decoration: none;
+  }
+  .div-12 ul li a{
+      font-weight: 500;
+      font-size: 13px;
+      text-decoration: none;
+      color: black;
+  }
 /*Header end*/
 
 
@@ -230,10 +279,158 @@ header{
 }
 /*Explore everything section start*/
 
+/*Registration section start*/
+.registration-section{
+    float: left;
+    width: 100%;
+    margin-top: 260px;
+    height: auto;
+}
+.register-heading{
+    margin: 40px 0px;
+    color: white;
+    text-align: center;
+}
+.register-heading h1{
+    margin: 10px;
+    font-size: 30px;
+}
+.register-heading p{
+    margin: 0px 47px;
+    font-size: 15px;
+    color: rgb(230 230 230);
+    font-weight: 400;
+}
+.register-form{
+    padding-top: 30px;
+    padding-left: 221px;
+    margin-top: 936px;
+    
+    width: 25%;
+    float: left;
+    height: auto;
+    z-index: 1;
+    position: absolute;
+}
+.register-form h6{
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.register-form input{
+    font-size: 10px;
+    width: 87%;
+    padding:5px 0px;
+    border: none;
+    border-bottom: 1px solid darkgray;
+}
+.register-form button{
+    width: 88%;
+    background: #303030;
+    color: white;
+    border: none;
+    padding: 13px 0px;
+}
+.slant{
+    width: 100%;
+    height: 300px;
+    background-color: #071437;
+    position: relative;
+}
+.slant-content{
+    position: absolute;
+    margin-top: -55px;
+    color: white;
+    font-size: 48px;
+    margin-left: 581px;
+    z-index: 1;
+}
+.slant-content span{
+    color: #2a80b9;
+}
+.register-circles div{
+    float: left;
+    border-radius: 50%;
+    border: 1px solid #4e4d4c;
+    height: 120px;
+    width: 120px;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+.register-circles p{
+    font-size: 14px;
+    color: #a5a3a1;
+    margin-top: 5px;
+    margin-left: 29px;
+}
+    .register-circles h6{
+    font-size: 22px;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+.slantdiv1{
+    width: 100%;
+    margin-top: -422px;
+    top: 0;
+    left: 0;
+    
+    height: 300px;
+    transform: skewY(-10deg);
+    background-color: #071437;
+}
+.slant-white{
+    width: 25%;
+    margin-left: 200px;
+    height: 250px;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    
+}
+.slantdiv-white{
+    width: 25%;
+    margin-left: 200px;
+    height: 245px;
+    margin-top: -160px;
+    background-color: white;
+    transform: skewY(10deg);
+    z-index: 1;
+} 
+.skyblue-div{
+    background-color:#2a80b9;
+    width: 25%;
+    height: 150px;
+    transform: rotate(-9deg);
+    margin-top: -215px;
+    margin-left: 187px;
+    position: absolute;
+    z-index: -1;
+}
+.skyblue1-div{
+    background-color:#2a80b9 ;
+    width: 25.4%;
+    margin-top: -240px;
+    margin-left: 196px;
+    height: 142px;
+    position: absolute;
+    z-index: 1;
+}
+.greendiv{
+    background-color: white;
+    width: 10%;
+    transform: rotate(10deg);
+    height: 270px;
+    margin-left: -37px;
+    margin-top: -5px;
+    z-index: 0;
+    position: absolute;
+}
+
+
+/*Registration section end*/
 
 /*Featured course start*/
 .featured-section{
-    margin-top: 30px;
+    margin-top: 170px;
     height: auto;
     width:100%;
     text-align: center;

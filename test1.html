@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <style>
+        .insideul{
+  height: 150px;
+  border: 1px solid #dddddd;
+  margin: auto;
+  width: 80%;
+  padding: 0;
+  box-shadow: 0px 0px 4px 4px #dddddd;
+    overflow: hidden;
+
+}
+.div-11, .div-12{
+  display: inline-block;
+}
+.div-11{
+  width: 25%;
+  height: 150px;
+  color: white;
+    position: relative;
+}
+.div-11:after{
+content: '';
+    width: 200%;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    right: -10%;
+    z-index: -1;
+    transform: skewX(-15deg);
+    background-size: cover;
+    background-image: url('images/banner1.jpg');
+}
+.div-12{
+  width: 80%;
+  margin: 0;
+  height: 50px;
+}
+    </style>
+</head>
+<body>
+    <div class="insideul">
+        <div class="div-11">
+            <h1>STREAMS</h1>
+            <h5>WE PROMISE TO PROVIDE BEST</h5>
+        </div>
+        <div class="div-12"></div>
+        
+      </div>
+ </body>
+</html>

@@ -3,63 +3,29 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <style>
-      .outer-div{
-  height: 50px;
-  border: 1px solid #dddddd;
-  margin: 0;
-  padding: 0;
-  box-shadow: 0px 0px 4px 4px #dddddd;
-    overflow: hidden;
-}
-.div-1, .div-2, .div-3 {
-  display: inline-block;
-}
-.div-1{
-  width: 10%;
-  height: 50px;
-    position: relative;
-}
-.div-1:after{
-content: '';
-    width: 200%;
-    height: inherit;
-    position: absolute;
-    top: 0;
-    right: -10%;
     
-    transform: skewX(-15deg);
-    background-color: #0af;
-}
-.div-2{
-  width: 79%;
-  margin: 0;
-  height: 50px;
-}
-.div-3{
-  width: 10%;
-  height: 50px;
-  position: relative;
-}
-.div-3:after{
-content: '';
-    width: 200%;
-    height: inherit;
-    position: absolute;
-    top: 0;
-    left: -10%;
-    z-index: -1;
-    transform: skewX(-15deg);
-    background-color: #0af;
-}
+    <style>
+   .div1{
+       width: 60%;
+       height: 200px;
+       background-color: hotpink;
+       margin: auto;
+       margin-top: 180px;
+       transform: rotate(-25deg);
+   }
+   .div2{
+       background-color: red;
+       width: 30%;
+       height: 200px;
+   }
+
     </style>
 </head>
 <body>
-    <div class="outer-div">
-        <div class="div-1"></div>
-        <div class="div-2"></div>
-        <div class="div-3"></div>
-      </div>
+    
+        <div class="div1"></div>
+        <div class="div2"></div>
+        
+    
  </body>
 </html>
