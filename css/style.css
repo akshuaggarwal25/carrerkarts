@@ -372,7 +372,6 @@ header{
     margin-top: -422px;
     top: 0;
     left: 0;
-    
     height: 300px;
     transform: skewY(-10deg);
     background-color: #071437;
@@ -396,20 +395,20 @@ header{
     z-index: 1;
 } 
 .skyblue-div{
-    background-color:#2a80b9;
-    width: 25%;
-    height: 150px;
+    background-color: #2a80b9;
+    width: 25.9%;
+    height: 149px;
     transform: rotate(-9deg);
-    margin-top: -215px;
-    margin-left: 187px;
-    position: absolute;
+    margin-top: -151px;
+    margin-left: 190px;
+    /* position: absolute; */
     z-index: -1;
 }
 .skyblue1-div{
-    background-color:#2a80b9 ;
-    width: 25.4%;
+    background-color: #2a80b9;
+    width: 25%;
     margin-top: -240px;
-    margin-left: 196px;
+    margin-left: 201px;
     height: 142px;
     position: absolute;
     z-index: 1;
