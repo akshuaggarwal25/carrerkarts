@@ -1,0 +1,311 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.list-unstyled li a{
+    font-size:11px !important;
+    color:white !important;
+    margin-left:-10px !important;
+  }
+  .footer h5{
+    margin-left: -10px;
+  }
+.banner{
+    background-image: url('../images/banner1.jpg');
+    height: 500px;
+    width: 100%;
+    background-size:100% 100% ;
+    padding-top:40px ; 
+}
+
+
+/*Header start*/
+.outer-div{
+    height: 60px;
+    border-bottom: 2px solid #2A80B9;
+    margin: auto;
+    width: 80%;
+    margin-top: 20px;
+    padding: 0;
+    background-color: white;
+      overflow: hidden;
+  }
+  .div-2, .div-3 {
+    display: inline-block;
+  }
+  .div-2{
+    width: 80%;
+    margin: auto;
+    height: 50px;
+  }
+  .div-3{
+    width: 10%;
+    height: 60px;
+    float: right;
+    position: relative;
+    padding-top: 19px;
+  }
+  .div-3:after{
+  content: '';
+      width: 200%;
+      height: inherit;
+      position: absolute;
+      top: 0;
+      left: -10%;
+      
+      transform: skewX(-15deg);
+      background-color: #2A80B9;
+  }
+  .div-3 a{
+    color: white;
+    z-index: 10;
+    text-decoration: none;
+    margin-top: 3px;
+    margin-left: 5px;
+    position: absolute;
+      
+  }
+  .forul{
+      position: absolute;
+  }
+  .forul img{
+    height: auto;
+    width: 82%;
+    margin-top: -19px;
+    margin-left: -15px;
+  }
+  .forul li{
+      float: left;
+      padding: 19px 15px;
+      text-decoration: none;
+      
+      display: block;
+  }
+  .forul li a{
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+  }
+.mainul{
+    float: left;
+    margin-bottom: -1px;
+}
+.nav-strip{
+    background-color:white;
+    width: 100%;    
+    height: auto;
+    float: left;
+    border-bottom: 2px solid #2a80b9;
+    margin: auto;
+}
+.nav-strip img{
+    width:20%;
+    float: left;
+}
+.nav-strip button{
+    background-color: green;
+    color: white;
+}
+.mainul li{
+    float: left;
+   text-decoration: none;
+   padding: 19px 25px;
+   display: block;
+}
+.mainul li a{
+    text-decoration: none;
+    margin-left: 9px;
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+}
+.insideul{
+    width: 80%;
+   
+    height: 180px;
+    margin: auto;
+    overflow: hidden;
+    background-color:white;
+}
+
+.div-11, .div-12{
+    display: inline-block;
+  }
+  .div-11{
+    width: 25%;
+    height: 180px;
+    color: white;
+      position: relative;
+  }
+  .div-11:after{
+  content: '';
+      width: 200%;
+      height: inherit;
+      position: absolute;
+      top: 0;
+      right: -10%;
+      transform: skewX(-15deg);
+      background-size: cover;
+      background-image: url('../images/banner2.jpg');
+  }
+  .div-11-content{
+      z-index: 1;
+      position: absolute;
+      margin-top: 50px;
+      margin-left: 20px;
+  }
+  .div-12{
+    width: 80%;
+    float: right;
+    margin: 40px -130px;
+    height: 50px;
+  }
+  .div-12 ul{
+      
+      float: left;
+      margin-top: -32px;
+  }
+  .div-12 ul li{
+      margin-bottom: 10px;
+      display: block;
+      text-decoration: none;
+  }
+  .div-12 ul li a{
+      font-weight: 500;
+      font-size: 13px;
+      text-decoration: none;
+      color: black;
+  }
+/*Header end*/
+
+.imagestrip{
+    background-image: url('../images/stripimage.jpg');
+    width: 100%;
+    height: auto;
+}
+
+
+/* top listing start*/
+
+.slantdiv {
+    display: inline-block;
+  }
+  
+  .slantdiv{
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+  .slantdiv:after{
+  content: '';
+      width: 75%;
+      height: inherit;
+      position: absolute;
+      top: 0;
+      left: -3%;
+      overflow-x: hidden;
+      transform: skewX(-15deg);
+      background-color: #2a80b9;
+  }
+  .testyr{
+      background-color:#2a80b9;
+      width: 40%;
+      height: 500px;
+      float: right;
+      margin-right: -2%;
+  }
+  .exam-course{
+      width: 100%;
+      height: 550px;
+      float: left;
+      
+  }
+  .course{
+      width:50%;
+      border:2px solid white;
+      height: 550px;
+      float: left;
+  }
+
+  .exam-content{
+      z-index: 1;
+      position: absolute;
+     
+      color: white;
+     
+  }
+  .exam-content span{
+      margin: auto;
+      text-align: center;
+      font-size: 12px;
+      margin-left: 140px;
+      width: 100%;
+  }
+  .exam-content h1{
+      width: 100%;
+      font-weight: bold;
+      margin: 7px 0px;
+      text-align: center;
+      margin-left: 60px;
+  }
+  .examhr{
+      width:13%;
+      margin-left: 280px;
+  }
+  .exam-content p{
+      width: 101%;
+      text-decoration-line: underline;
+      padding: 40px 20px;
+     
+      margin: 20px;
+      font-size: 17px;
+      text-transform: uppercase;
+  }
+  .course-heading{
+      
+      text-align: center;
+      margin-left:-80px;
+  }
+  .course-heading h6{
+      color: gray;
+      font-size: 12px;
+      margin-bottom: 5px;
+  }
+  .course-heading p{
+      margin-left: 100px;
+      text-decoration-line: underline;
+      padding: 40px 20px;
+      color: #2A80B9;
+      margin: 36px;
+      font-size: 17px;
+      text-transform: uppercase;
+  }
+  .hover :hover{
+    background: linear-gradient(to bottom, #0569b6  0%,#04497e  100%); 
+    cursor: pointer;
+    color: white;
+  }
+
+
+/* top listing end*/
+
+/*Media query*/
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .outer-div {
+      display: none;
+    }
+    .insideul {
+        display: none;
+      }
+   .headingbtn{
+       text-align: center;
+   }
+  }
+  @media only screen and (max-width: 580px) {
+    /* For mobile phones: */
+    .whycareerkart {
+      display: none;
+    }
+  }
+/*Media query*/
