@@ -323,12 +323,14 @@ header{
     border: none;
     border-bottom: 1px solid darkgray;
 }
-.register-form button{
+
+#regisbtn{
     width: 88%;
     background: #303030;
     color: white;
     border: none;
     padding: 13px 0px;
+    font-size: 15px;
 }
 .slant{
     width: 100%;
@@ -340,7 +342,7 @@ header{
     position: absolute;
     margin-top: -55px;
     color: white;
-    font-size: 48px;
+    font-size: 48px;    
     margin-left: 581px;
     z-index: 1;
 }
@@ -947,6 +949,12 @@ hr{
     color: white;
     text-decoration: none;
 }
+.query .subject::placeholder{
+  color: white;
+}
+.query .message::placeholder{
+  color: white;
+}
 /*Query end*/
 
 
@@ -1068,4 +1076,5 @@ hr{
     float: left ;
 }
 /*Footer end*/
+
 
